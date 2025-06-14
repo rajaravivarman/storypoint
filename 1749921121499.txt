@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+// add returns the sum of two integers
+func add(a, b int) int {
+    return a + b
+}
+
+func main() {
+    // Define two numbers
+    num1 := 15
+    num2 := 25
+    
+    // Calculate sum using the add function
+    result := add(num1, num2)
+    
+    // Print the result
+    fmt.Printf("The sum of %d and %d is: %d\n", num1, num2, result)
+    
+    // Alternative: direct calculation
+    directSum := num1 + num2
+    fmt.Printf("Direct calculation: %d + %d = %d\n", num1, num2, directSum)
+}
